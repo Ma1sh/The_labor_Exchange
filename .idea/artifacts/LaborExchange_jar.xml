@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LaborExchange:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LaborExchange_jar</output-path>
+    <root id="archive" name="LaborExchange.jar">
+      <element id="module-output" name="LaborExchange" />
+    </root>
+  </artifact>
+</component>
