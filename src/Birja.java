@@ -7,9 +7,9 @@ public class Birja {
         private String home;
         private String contacts;
         private String requirements; //требования
-        private String work; //работа;
 
-        public Birja(String profession, String education, String lastposition, String cause, String family, String home,String contacts,String requirements,String work) {
+
+        public Birja(String profession, String education, String lastposition, String cause, String family, String home,String contacts,String requirements) {
             this.profession = profession;
             this.education = education;
             this.lastposition = lastposition;
@@ -18,11 +18,12 @@ public class Birja {
             this.home = home;
             this.contacts = contacts;
             this.requirements = requirements;
-            this.work = work;
+
         }
 
 
-        public String getProfession() {
+
+    public String getProfession() {
 
             return profession;
         }
@@ -88,12 +89,5 @@ public class Birja {
         public void setFamily(String family) {
             this.family = family;
         }
-        public String getWork() {
-            return work;
-        }
-        public void setWork(String work) {
-            this.work = work;
-        }
-
 
 }

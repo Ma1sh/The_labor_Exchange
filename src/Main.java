@@ -56,10 +56,9 @@ public class Main {
             String contacts = scanner.nextLine();
             System.out.println("Требования к будущей работе: ");
             String requirements = scanner.nextLine();
-            System.out.println("Вы нашли работу?(Да/Нет):");
-            String work = scanner.nextLine();
 
-            Birja user = new Birja(profession, education, lastposition, cause, family, home, contacts, requirements, work);
+
+            Birja user = new Birja(profession, education, lastposition, cause, family, home, contacts, requirements);
             usersList.add(user);
 
             File newfile = new File("users.txt");
@@ -76,8 +75,7 @@ public class Main {
                             "Семейное положение: " + user.getFamily() + "\n" +
                             "Жилищные условия: " + user.getHome() + "\n" +
                             "Контактные координаты: " + user.getContacts() + "\n" +
-                            "Требования к будушей работе: " + user.getRequirements() + "\n" +
-                            "Вы нашли работу?:" + user.getWork() + "\n" + "\n";
+                            "Требования к будушей работе: " + user.getRequirements() + "\n" + "\n";
             writer.write(data);
             writer.flush();
             writer.close();
